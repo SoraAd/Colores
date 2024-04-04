@@ -1,0 +1,12 @@
+#pane{
+    -fx-background-image: url("https://img.freepik.com/vector-gratis/fondo-abstracto-azul-anaranjado_23-2147723457.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+#paneText{
+    -fx-border-color: #000000;
+    -fx-background-color: #ffffff;
+}
+

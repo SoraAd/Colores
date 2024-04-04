@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1010.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interfazbase.HelloController">
+
+   <children>
+      <ImageView fx:id="imgLogo" fitHeight="100.0" fitWidth="101.0" layoutX="110.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Warsow_logo.svg/250px-Warsow_logo.svg.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="185.0" prefHeight="563.0" prefWidth="640.0" spacing="20.0">
+         <children>
+            <Pane fx:id="paneText" prefHeight="35.0" prefWidth="641.0">
+               <children>
+                  <Text fx:id="textInit" layoutX="-93.0" layoutY="-174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce el codigo RGB igual al siguiente ejemplo #FFFFFF" x="100.0" y="200.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <TextField fx:id="textColor" prefHeight="31.0" prefWidth="186.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="buttom" mnemonicParsing="false" onAction="#chargerColor" prefHeight="51.0" prefWidth="126.0" text="Dibujar">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Label fx:id="textError" prefHeight="35.0" prefWidth="514.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Circle fx:id="circle" fill="#fFba7b" radius="118.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
